@@ -1,0 +1,120 @@
+\documentclass[10pt,twocolumn,letterpaper]{article}
+
+\usepackage{cvpr}
+\usepackage{times}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% Include other packages here, before hyperref.
+
+% If you comment hyperref and then uncomment it, you should delete
+% egpaper.aux before re-running latex.  (Or just hit 'q' on the first latex
+% run, let it finish, and you should be clear).
+\usepackage[breaklinks=true,bookmarks=false]{hyperref}
+
+\cvprfinalcopy % *** Uncomment this line for the final submission
+
+\def\cvprPaperID{****} % *** Enter the CVPR Paper ID here
+\def\httilde{\mbox{\tt\raisebox{-.5ex}{\symbol{126}}}}
+
+% Pages are numbered in submission mode, and unnumbered in camera-ready
+%\ifcvprfinal\pagestyle{empty}\fi
+\setcounter{page}{1}
+\begin{document}
+
+%%%%%%%%% TITLE
+\title{Unsupervised Speaker Identification}
+
+\author{Thivakkar Mahendran\\
+University of Massachusetts Amherst\\
+%Institution1 address\\
+{\tt\small tmahendran@umass.edu}
+% For a paper whose authors are all at the same institution,
+% omit the following lines up until the closing ``}''.
+% Additional authors and addresses can be added with ``\and'',
+% just like the second author.
+% To save space, use either the email address or home page, not both
+\and
+Varun Prasad\\
+University of Massachusetts Amherst\\
+%First line of institution2 address\\
+{\tt\small @umass.edu}
+}
+
+\maketitle
+%\thispagestyle{empty}
+
+
+
+%%%%%%%%% BODY TEXT
+\section{Introduction}
+
+A voice recorder makes it super convenient to take notes or preserve the minutes of a meeting. In order to make the experience better, there are tools that can be used to automatically convert speech to text. One area where this tool currently fails at is identifying the speaker. The problem that we are trying to solve is to identify the speaker. Our ultimate goal is to build a project where we are able to record a meeting and identify which person is speaking at that specific time and what they said.
+
+It would be cumbersome and time consuming to record each speaker’s voice beforehand and train a speaker recognition model on the speakers’ voice. We want this tool to predict the speaker without prior training of the speaker’s voice. This would be an unsupervised learning project. 
+
+For example, if two speakers were talking in a meeting we would like out tool to output like:
+\\ {\bf Speaker1}: Hey, How are you?
+\\ {\bf Speaker2}: I’m doing well.
+\\ {\bf Speaker2}: I was able to complete the tasks that we talked about last week
+\\ {\bf Speaker1}: That’s great.
+\\ These two speaker’s voices have not been trained before but still the program would identify the two speakers. 
+
+%------------------------------------------------------------------------
+
+\section{Problem Statement}
+
+\subsection{Dataset}
+
+The dataset that we planned to use was VoxCeleb, which is a  large scale audio-visual dataset of human speech. The dataset contains 7,000+ speakers, 1 million+ utterances, and 2,000+ hours of audio. The total size of the dataset was around 250 GB. The dataset was really huge in terms of computational complexity and also space required to store and train the model. After weeks of trying to use the dataset, we decided to build our own dataset. 
+
+We decided to create our own dataset so we could tailor the dataset to exactly suit our project. We built a pipeline to scrape audio from youtube videos, and then split a whole audio into chunks of 1 second audio clips. We decided to create 1 second audio clips because when this model is getting used in the real world, we want to recognize the speaker instantly with as little of a delay as possible. According to (1) virtualspeech.com, an average person speaks about 150 words per minute, which is about 2.5 words per second. This is enough to extract useful features from the person’s speech. At the end of the project, we are planning to experiment on the seconds of each audio clip to see its effect on the accuracy of the model. 
+
+The youtube videos that we chose to include in our dataset were speeches/monologues from celebrities. We thought this would be the best way to build a labeled dataset of audios of different people. To start with, the dataset includes 7  celebrities (Obama, Hillary, Ivanka, Trump, No Speaker, Modi, Xi-Jinping, and Chadwick-Boseman) and 1 “no speaker” class which includes multiple background noises. We included the “no speaker” class so that the model can recognize when no one is speaking.  We wanted the dataset to be as diverse as possible, that is why we included speakers of both genders, different races, and also different languages. The current dataset has a size of 4.1+ hours.  
+
+\begin{table}[h]
+    \begin{tabular}{l|l|l|l|l|}
+    \cline{2-5}
+                                                    & \textbf{Gender} & \textbf{Language} & \textbf{Race} & \textbf{Length} \\ \hline
+    \multicolumn{1}{|l|}{\textbf{Obama}}            & Male            & English           & Black         & 19.5 mins       \\ \hline
+    \multicolumn{1}{|l|}{\textbf{Hillary}}          & Female          & English           & White         & 57.5 mins       \\ \hline
+    \multicolumn{1}{|l|}{\textbf{Ivanka}}           & Female          & English           & White         & 17.9 mins       \\ \hline
+    \multicolumn{1}{|l|}{\textbf{Trump}}            & Male            & English           & White         & 41.6 mins       \\ \hline
+    \multicolumn{1}{|l|}{\textbf{Modi}}             & Male            & Hindi             & Indian        & 32.4 mins       \\ \hline
+    \multicolumn{1}{|l|}{\textbf{Xi-Jinping}}       & Male            & Chinese           & Chinese       & 11.18 mins      \\ \hline
+    \multicolumn{1}{|l|}{\textbf{Chadwick-Boseman}} & Male            & English           & Black         & 27.1 mins       \\ \hline
+    \multicolumn{1}{|l|}{\textbf{No Speaker}}       & N/A             & N/A               & N/A           & 39.6 mins       \\ \hline
+    \end{tabular}
+    \caption{Details of the Dataset}
+    \label{Dataset}
+\end{table}
+
+We are planning to add more diverse speakers to make the model predict better. We will experiment with the dataset to see the impact on the model. For example, we will train the model on all male voices or only english as the language to see the impact on the model. 
+
+
+
+
+%------------------------------------------------------------------------
+
+\section{Technical Approach}
+
+
+
+%------------------------------------------------------------------------
+
+
+\section{Preliminary Results}
+
+
+
+%------------------------------------------------------------------------
+
+
+{\small
+\bibliographystyle{ieee}
+\bibliography{egbib}
+}
+
+\end{document}
