@@ -53,10 +53,9 @@ University of Massachusetts Amherst\\
 
 A voice recorder makes it super convenient to take notes or preserve the minutes of a meeting. In order to make the experience better, there are tools that can be used to automatically convert speech to text. One area where this tool currently fails at is identifying the speaker. The problem that we are trying to solve is to identify the speaker. Our ultimate goal is to build a project where we are able to record a meeting and identify which person is speaking at that specific time and what they said.
 
-It would be cumbersome and time consuming to record each speaker’s voice beforehand and train a speaker recognition model on the speakers’ voice. We want this tool to predict the speaker without prior training of the speaker’s voice. This would be an unsupervised learning project. 
-
+It would be cumbersome and time consuming to record each speaker’s voice beforehand and train a speaker recognition model on the speakers’ voice. We want this tool to predict the speaker without prior training of the speaker’s voice. This would be an unsupervised learning project. \hfill \break \break
 For example, if two speakers were talking in a meeting we would like out tool to output like:
-\\ {\bf Speaker1}: Hey, How are you?
+\\  {\bf Speaker1}: Hey, How are you? 
 \\ {\bf Speaker2}: I’m doing well.
 \\ {\bf Speaker2}: I was able to complete the tasks that we talked about last week
 \\ {\bf Speaker1}: That’s great.
@@ -93,8 +92,15 @@ The youtube videos that we chose to include in our dataset were speeches/monolog
 
 We are planning to add more diverse speakers to make the model predict better. We will experiment with the dataset to see the impact on the model. For example, we will train the model on all male voices or only english as the language to see the impact on the model. 
 
+\subsection{Expected Result and Evaluation}
 
+The project is split into two parts, the first part would be training the model to recognize and predict the 8 different speakers from the dataset. The second part would be to modify the model to recognize different speakers who have not been trained before.  We want the model to differentiate different speakers and label each speaker as “speaker\#”. A python script has been created to get a live stream of audio data from the computer, process every 1 second audio clip by extracting features on the audio and then using the features to predict the speaker by using the model. So every 1 second, the program will output the current speaker or “no speaker” if no one is talking.   
 
+For the first part of the project we will be performing the five-fold cross validation to train and evaluate  the model. We will be evaluating the model by getting the accuracy, precision, and recall. We would like the model to perform at least 90\% accuracy on the test dataset so the model would work better in the second part of the project. 
+
+Evaluating the second part of the project would be slightly harder because we don’t have a labeled dataset of speakers talking at every timestamp. We either need to build our own dataset to make it work for this specific use case or we have to manually evaluate the model. One possible way to evaluate is to play an interview video between two or more people and physically check if the model predicts the speaker speaking at that very point of time. 
+
+We are expecting several factors to impact the accuracy of the model. For example, the speaker’s gender, age, race, language, dialect of a language could affect the accuracy of the model. Multiple speakers speaking at the same time might also impact the accuracy of the model. These are some things that we are interested in evaluating. These results would help us improve the model in the future based on its weakness. 
 
 %------------------------------------------------------------------------
 

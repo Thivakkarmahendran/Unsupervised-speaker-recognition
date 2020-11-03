@@ -1,14 +1,14 @@
 # Fdb version 3
-["bibtex Project Milestone"] 1604376071 "Project Milestone.aux" "Project Milestone.bbl" "Project Milestone" 1604376440
+["bibtex Project Milestone"] 1604445407 "Project Milestone.aux" "Project Milestone.bbl" "Project Milestone" 1604445571
   "./ieee.bst" 1506858108 19623 f9cd22458ca68af2567100f1aed905e8 ""
-  "Project Milestone.aux" 1604376440 1600 e2671aa41799aa4e734c472916255ad8 "pdflatex"
+  "Project Milestone.aux" 1604445514 1766 8e123cceae0205a3111e16efae485354 "pdflatex"
   "egbib.bib" 1506858108 907 1d8a715c06a031388df50ca64d08e3a9 ""
   (generated)
-  "Project Milestone.blg"
   "Project Milestone.bbl"
-["pdflatex"] 1604376439 "/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Milestone/Project Milestone.tex" "/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Milestone/Project Milestone.pdf" "Project Milestone" 1604376440
-  "/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Milestone/Project Milestone.aux" 1604376440 1600 e2671aa41799aa4e734c472916255ad8 ""
-  "/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Milestone/Project Milestone.tex" 1604376439 6676 f1552cba04783ef30537530c641fc720 ""
+  "Project Milestone.blg"
+["pdflatex"] 1604445513 "/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Milestone/Project Milestone.tex" "/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Milestone/Project Milestone.pdf" "Project Milestone" 1604445571
+  "/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Milestone/Project Milestone.aux" 1604445514 1766 8e123cceae0205a3111e16efae485354 ""
+  "/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Milestone/Project Milestone.tex" 1604445513 8659 4f02b992c56fc2c9ee9595c33fe6152b ""
   "/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1136768653 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -89,15 +89,15 @@
   "/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1557342064 3277517 23507ed665b4dd9046f0f2a94bbef2be ""
   "/usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1557342086 4259635 562fc36ec496993777a6c428d8bfb811 ""
   "/usr/local/texlive/2019/texmf.cnf" 1557341546 577 d150fef99ac436ad1156e86b0892f6ef ""
-  "Project Milestone.aux" 1604376440 1600 e2671aa41799aa4e734c472916255ad8 "pdflatex"
-  "Project Milestone.bbl" 1604376071 62 d49dbf9d4b1773efa2d694c4016814c1 "bibtex Project Milestone"
-  "Project Milestone.tex" 1604376439 6676 f1552cba04783ef30537530c641fc720 ""
+  "Project Milestone.aux" 1604445514 1766 8e123cceae0205a3111e16efae485354 "pdflatex"
+  "Project Milestone.bbl" 1604445407 62 d49dbf9d4b1773efa2d694c4016814c1 "bibtex Project Milestone"
+  "Project Milestone.tex" 1604445513 8659 4f02b992c56fc2c9ee9595c33fe6152b ""
   "cvpr.sty" 1506864032 8185 1f09b4535924bf997f66357aa9ee3654 ""
   "cvpr_eso.sty" 1506858108 3878 6aa7c08ff2621006e0603349e40a30a8 ""
   "eso-pic.sty" 1506858108 9460 d2935ae95b5cd343fcf5887ff530288d ""
   (generated)
+  "Project Milestone.pdf"
+  "/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Milestone/Project Milestone.pdf"
   "Project Milestone.log"
   "/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Milestone/Project Milestone.log"
   "Project Milestone.aux"
-  "/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Milestone/Project Milestone.pdf"
-  "Project Milestone.pdf"
