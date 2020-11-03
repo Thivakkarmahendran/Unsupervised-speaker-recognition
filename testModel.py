@@ -52,9 +52,7 @@ audioFeatureArray = getFeatures(audio_Paths)
         
 validation_x = np.array(audioFeatureArray)
 
-
-predictScore = model.predict(validation_x)
-        
+predictScore = model.predict(validation_x)        
 classes = np.argmax(predictScore, axis = 1)
 
 speakerCount = dict()
@@ -69,5 +67,3 @@ for speaker in speakerCount:
     print("Speaker: {} ----> Votes: {}".format(speakers[int(speaker)], speakerCount[speaker] )) 
 print("-------------------------")
 print("")
-
-
