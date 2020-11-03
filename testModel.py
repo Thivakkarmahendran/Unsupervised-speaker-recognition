@@ -39,7 +39,7 @@ def getFeatures(audio_Paths):
 
 
 def findAllAudioFilePaths():
-    audioFilesPaths = [y for x in os.walk("Dataset/Youtube Speech Dataset/Dataset/Chadwick-Boseman") for y in glob(os.path.join(x[0], '*.wav'))]
+    audioFilesPaths = [y for x in os.walk("Dataset/Youtube Speech Dataset/Dataset/No Speaker") for y in glob(os.path.join(x[0], '*.wav'))]
     return audioFilesPaths
 
 ###############################
