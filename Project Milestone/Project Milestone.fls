@@ -49,6 +49,14 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amssymb.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amssymb.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/colortbl/colortbl.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/colortbl/colortbl.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/tools/array.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/hyperref.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/hyperref.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
@@ -79,10 +87,6 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/graphics/color.sty
-INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/graphics/color.sty
-INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/graphics/color.sty
-INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg
-INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg
 INPUT /usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty

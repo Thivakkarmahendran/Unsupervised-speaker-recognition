@@ -7,6 +7,9 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 
+\usepackage{graphicx}
+\usepackage[table,xcdraw]{xcolor}
+
 % Include other packages here, before hyperref.
 
 % If you comment hyperref and then uncomment it, you should delete
@@ -123,6 +126,24 @@ We are continuing to experiment with various other features that are useful in a
 
 \section{Preliminary Results}
 
+The classes for the confusion matrix below are: Obama(1), Hillary(2), Ivanka(3), Trump(4), No Speaker(5), Modi(6), Xi-Jinping(7), and Chadwick-Boseman(8).
+
+\begin{table}[h]
+    \begin{tabular}{l|l|l|l|l|l|l|l|l|}
+    \cline{2-9}
+                                     & \textbf{1}                    & \textbf{2}                    & \textbf{3}                    & \textbf{4}                    & 5                             & \textbf{6}                    & \textbf{7}                    & \textbf{8}                    \\ \hline
+    \multicolumn{1}{|l|}{\textbf{1}} & \cellcolor[HTML]{67FD9A}0.735 & 0.016                         & 0.033                         & 0.022                         & 0.000                         & 0.010                         & 0.058                         & 0.124                         \\ \hline
+    \multicolumn{1}{|l|}{\textbf{2}} & 0.017                         & \cellcolor[HTML]{67FD9A}0.924 & 0.000                         & 0.001                         & 0.003                         & 0.055                         & 0.000                         & 0.001                         \\ \hline
+    \multicolumn{1}{|l|}{\textbf{3}} & 0.010                         & 0.000                         & \cellcolor[HTML]{67FD9A}0.988 & 0.002                         & 0.000                         & 0.000                         & 0.000                         & 0.000                         \\ \hline
+    \multicolumn{1}{|l|}{\textbf{4}} & 0.014                         & 0.006                         & 0.002                         & \cellcolor[HTML]{67FD9A}0.805 & 0.000                         & 0.166                         & 0.006                         & 0.000                         \\ \hline
+    \multicolumn{1}{|l|}{\textbf{5}} & 0.000                         & 0.757                         & 0.000                         & 0.000                         & \cellcolor[HTML]{67FD9A}0.243 & 0.000                         & 0.000                         & 0.000                         \\ \hline
+    \multicolumn{1}{|l|}{\textbf{6}} & 0.004                         & 0.079                         & 0.000                         & 0.081                         & 0.000                         & \cellcolor[HTML]{67FD9A}0.832 & 0.002                         & 0.002                         \\ \hline
+    \multicolumn{1}{|l|}{\textbf{7}} & 0.001                         & 0.000                         & 0.000                         & 0.001                         & 0.003                         & 0.000                         & \cellcolor[HTML]{67FD9A}0.945 & 0.049                         \\ \hline
+    \multicolumn{1}{|l|}{\textbf{8}} & 0.004                         & 0.000                         & 0.000                         & 0.000                         & 0.001                         & 0.000                         & 0.004                         & \cellcolor[HTML]{67FD9A}0.991 \\ \hline
+    \end{tabular}
+    \caption{Confusion matrix}
+    \label{Confusion matrix}
+\end{table}
 
 
 %------------------------------------------------------------------------

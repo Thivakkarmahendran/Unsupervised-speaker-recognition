@@ -6,6 +6,10 @@ import librosa
 import os
 from glob import glob
 
+
+speakers = ["Obama", "Hillary", "Ivanka", "Trump", "No Speaker", "Modi", "Xi-Jinping", "Chadwick-Boseman"]
+model = keras.models.load_model('Trained Model')
+
 def getFeatures(audio_Paths):
     
     data_X = []
@@ -38,32 +42,41 @@ def getFeatures(audio_Paths):
     return data_X
 
 
-def findAllAudioFilePaths():
-    audioFilesPaths = [y for x in os.walk("Dataset/Youtube Speech Dataset/Dataset/No Speaker") for y in glob(os.path.join(x[0], '*.wav'))]
+def findAllAudioFilePaths(speaker):
+    audioFilesPaths = [y for x in os.walk("Dataset/Youtube Speech Dataset/Dataset/{}".format(speaker)) for y in glob(os.path.join(x[0], '*.wav'))]
     return audioFilesPaths
+
+
+
+def runModel(speaker):
+   
+    audio_Paths = findAllAudioFilePaths(speaker)
+
+    audioFeatureArray = getFeatures(audio_Paths) 
+            
+    validation_x = np.array(audioFeatureArray)
+
+    predictScore = model.predict(validation_x)        
+    classes = np.argmax(predictScore, axis = 1)
+
+    speakerCount = dict()
+    for classPredict in classes:
+        speakerCount[classPredict] = speakerCount.get(classPredict, 0) + 1
+
+
+
+    print("")
+    print("-------------------------")
+    print("Testing model for {}".format(speaker))
+    
+    for speaker in speakerCount: 
+        print("Speaker: {} ----> Votes: {}".format(speakers[int(speaker)], speakerCount[speaker] )) 
+    print("-------------------------")
+    print("")
+
+
 
 ###############################
 
-speakers = ["Obama", "Hillary", "Ivanka", "Trump", "No Speaker", "Modi", "Xi-Jinping", "Chadwick-Boseman"]
-model = keras.models.load_model('Trained Model')
-audio_Paths = findAllAudioFilePaths()
-
-audioFeatureArray = getFeatures(audio_Paths) 
-        
-validation_x = np.array(audioFeatureArray)
-
-predictScore = model.predict(validation_x)        
-classes = np.argmax(predictScore, axis = 1)
-
-speakerCount = dict()
-for classPredict in classes:
-    speakerCount[classPredict] = speakerCount.get(classPredict, 0) + 1
-
-
-
-print("")
-print("-------------------------")
-for speaker in speakerCount: 
-    print("Speaker: {} ----> Votes: {}".format(speakers[int(speaker)], speakerCount[speaker] )) 
-print("-------------------------")
-print("")
+for speaker in speakers:
+    #runModel(speaker)
