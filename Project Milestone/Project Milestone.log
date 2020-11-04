@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  3 NOV 2020 18:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  4 NOV 2020 10:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -326,34 +326,39 @@ Overfull \hbox (59.39201pt too wide) in paragraph at lines 77--89
 [1{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
-] (/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Milestone/Project Milestone.bbl
+]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 115.
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 115.
+ (/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Milestone/Project Milestone.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 126.
- [2
-
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 126.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 136.
+ [2]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 136.
  (/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Milestone/Project Milestone.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 126.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 126.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 126.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 136.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 136.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 136.
  ) 
 Here is how much of TeX's memory you used:
- 6196 strings out of 492616
- 91177 string characters out of 6129482
+ 6213 strings out of 492616
+ 91479 string characters out of 6129482
  188447 words of memory out of 5000000
- 10022 multiletter control sequences out of 15000+600000
+ 10036 multiletter control sequences out of 15000+600000
  23160 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 32i,9n,27p,901b,324s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on "/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Milestone/Project Milestone.pdf" (2 pages, 48628 bytes).
+ 32i,9n,27p,913b,324s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on "/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Milestone/Project Milestone.pdf" (2 pages, 58605 bytes).
 PDF statistics:
- 40 PDF objects out of 1000 (max. 8388607)
- 32 compressed objects within 1 object stream
+ 44 PDF objects out of 1000 (max. 8388607)
+ 35 compressed objects within 1 object stream
  11 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
