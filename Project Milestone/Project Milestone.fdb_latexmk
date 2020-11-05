@@ -1,14 +1,7 @@
 # Fdb version 3
-["bibtex Project Milestone"] 1604533931 "Project Milestone.aux" "Project Milestone.bbl" "Project Milestone" 1604534062
-  "./ieee.bst" 1506858108 19623 f9cd22458ca68af2567100f1aed905e8 ""
-  "Project Milestone.aux" 1604534041 1956 9e183e352cef08c2daec1b2d0a2f4872 "pdflatex"
-  "egbib.bib" 1506858108 907 1d8a715c06a031388df50ca64d08e3a9 ""
-  (generated)
-  "Project Milestone.blg"
-  "Project Milestone.bbl"
-["pdflatex"] 1604534041 "/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Milestone/Project Milestone.tex" "/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Milestone/Project Milestone.pdf" "Project Milestone" 1604534062
-  "/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Milestone/Project Milestone.aux" 1604534041 1956 9e183e352cef08c2daec1b2d0a2f4872 ""
-  "/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Milestone/Project Milestone.tex" 1604534061 14321 f34204c7190c45c346fae9f3809c86c7 ""
+["pdflatex"] 1604612686 "/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Milestone/Project Milestone.tex" "/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Milestone/Project Milestone.pdf" "Project Milestone" 1604612725
+  "/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Milestone/Project Milestone.aux" 1604612686 2040 620d96aab67f07484b8f69c8279cb931 ""
+  "/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Milestone/Project Milestone.tex" 1604612685 16310 0ae3625cbe92036ebc1414cca193dcce ""
   "/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1136768653 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -94,15 +87,14 @@
   "/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1557342064 3277517 23507ed665b4dd9046f0f2a94bbef2be ""
   "/usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1557342086 4259635 562fc36ec496993777a6c428d8bfb811 ""
   "/usr/local/texlive/2019/texmf.cnf" 1557341546 577 d150fef99ac436ad1156e86b0892f6ef ""
-  "Project Milestone.aux" 1604534041 1956 9e183e352cef08c2daec1b2d0a2f4872 "pdflatex"
-  "Project Milestone.bbl" 1604533931 62 d49dbf9d4b1773efa2d694c4016814c1 "bibtex Project Milestone"
-  "Project Milestone.tex" 1604534061 14321 f34204c7190c45c346fae9f3809c86c7 ""
+  "Project Milestone.aux" 1604612686 2040 620d96aab67f07484b8f69c8279cb931 "pdflatex"
+  "Project Milestone.tex" 1604612685 16310 0ae3625cbe92036ebc1414cca193dcce ""
   "cvpr.sty" 1506864032 8185 1f09b4535924bf997f66357aa9ee3654 ""
   "cvpr_eso.sty" 1506858108 3878 6aa7c08ff2621006e0603349e40a30a8 ""
   "eso-pic.sty" 1506858108 9460 d2935ae95b5cd343fcf5887ff530288d ""
   (generated)
-  "/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Milestone/Project Milestone.pdf"
-  "/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Milestone/Project Milestone.log"
-  "Project Milestone.log"
   "Project Milestone.aux"
+  "Project Milestone.log"
+  "/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Milestone/Project Milestone.pdf"
   "Project Milestone.pdf"
+  "/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Milestone/Project Milestone.log"
