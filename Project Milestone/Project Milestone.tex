@@ -126,7 +126,9 @@ We are continuing to experiment with various other features that are useful in a
 
 \section{Preliminary Results}
 
-The classes for the confusion matrix below are: Obama(1), Hillary(2), Ivanka(3), Trump(4), No Speaker(5), Modi(6), Xi-Jinping(7), and Chadwick-Boseman(8).
+Attempting to acquire the VoxCeleb dataset took a big chunk of time, as we were trying to find ways around having to download such a large dataset (250 GB) which would need large amounts of storage and compute power. After spending a considerable amount of time on this, we decided to scrape YouTube audios and create a different dataset from them. Once we had the dataset finalised, we were able to move a little more quickly with building the network.
+
+For initial experimentation, we have constructed a 3-layer network (layer 1: size=12, activation=ReLU; layer 2: size=8, activation=ReLU; output layer: size= no. of speakers(8), activation=softmax). Using an Adam optimizer and categorical cross-entropy loss, we are able to achieve around 75-80\% accuracy over our dataset of 8 speakers. Our model has a total of 10,748 trainable parameters out of which layer 1 uses 10,572, layer 2 uses 104 and layer 3 uses 72 parameters respectively. We will continue to experiment with different network architectures, optimizers, etc to see how they influence the results.
 
 \begin{table}[h]
     \begin{tabular}{l|l|l|l|l|l|l|l|l|}
@@ -145,7 +147,7 @@ The classes for the confusion matrix below are: Obama(1), Hillary(2), Ivanka(3),
     \label{Confusion matrix}
 \end{table}
 
-
+Table 2 shows the confusion matrix for the different classes, or speakers: Obama(1), Hillary(2), Ivanka(3), Trump(4), No Speaker(5), Modi(6), Xi-Jinping(7), and Chadwick-Boseman(8). It is seen from the confusion matrix that the model is able to do a good job predicting each of the speakers, but it falls short when it comes to predicting the "No Speaker" class. The model is incorrectly predicting the audio clips where there is no speaker as "Hillary". We intend to explore further why this is happening, and aim to improve the model performance by either altering the network layers or adding more training data for the "No Speaker" class, or possibly both.
 %------------------------------------------------------------------------
 
 
