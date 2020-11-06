@@ -50,6 +50,11 @@ class AudioHandler(object):
         spectralRollOffArray = librosa.feature.spectral_rolloff(array)
         np.append(audioFeatureNumpyArray, spectralRollOffArray.flatten())
         
+        #pitch and magnitude
+        pitchArray, magnitudeArray = librosa.piptrack(array)
+        np.append(audioFeatureNumpyArray, pitchArray.flatten())
+        np.append(audioFeatureNumpyArray, magnitudeArray.flatten())
+        
         audioFeatureNumpyArray = audioFeatureNumpyArray.flatten()
         
         return audioFeatureNumpyArray

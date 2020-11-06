@@ -78,5 +78,18 @@ def runModel(speaker):
 
 ###############################
 
+"""
 for speaker in speakers:
-    #runModel(speaker)
+    runModel(speaker)
+"""
+
+"""
+layers =  model.layers
+numLayers = len(layers)
+
+embeddings = model.layers[numLayers-1].get_weights()[0]
+
+print(embeddings.shape)
+"""
+
+runModel("No Speaker")
