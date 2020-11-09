@@ -6,8 +6,18 @@ import librosa
 import os
 from glob import glob
 
+import scipy.cluster.hierarchy as hcluster
+import matplotlib.pyplot as plt
 
-speakers = ["Obama", "Hillary", "Ivanka", "Trump", "No Speaker", "Modi", "Xi-Jinping", "Chadwick-Boseman"]
+
+speakers = ["No Speaker"]
+numClips = 15
+
+
+for i in range(numClips):
+    speakers.append(str(i+1))
+    
+    
 model = keras.models.load_model('Trained Model')
 
 def getFeatures(audio_Paths):
@@ -79,17 +89,89 @@ def runModel(speaker):
 ###############################
 
 """
+runModel("No Speaker")
 for speaker in speakers:
     runModel(speaker)
 """
 
+#layers =  model.layers
+#numLayers = len(layers)
+#embeddings = model.layers[numLayers-1].get_weights()[0]
+#print(embeddings)
+
+model.pop()
+model.pop()
+ 
+ 
+audio_Paths = findAllAudioFilePaths("1")
+
+audioFeatureArray = getFeatures(audio_Paths) 
+            
+validation_x = np.array(audioFeatureArray)
+
+predictScore = model.predict(validation_x) 
+
+
+thresh = 100
+clusters = hcluster.fclusterdata(predictScore, thresh, criterion="distance")
+
+print( len(set(clusters))  )
+print(clusters)
+
 """
-layers =  model.layers
-numLayers = len(layers)
+plt.scatter(np.transpose(predictScore), c=clusters)
+plt.axis("equal")
+title = "threshold: %f, number of clusters: %d" % (thresh, len(set(clusters)))
+plt.title(title)
+plt.show()
+"""
+ 
+ 
+"""    
+def getdata(file):
+    audio_Paths = findAllAudioFilePaths(file)
 
-embeddings = model.layers[numLayers-1].get_weights()[0]
+    onePath = []
+    onePath.append(audio_Paths[0])
 
-print(embeddings.shape)
+    audioFeatureArray = getFeatures(audio_Paths) 
+
+    validation_x = np.array(audioFeatureArray)
+    
+    predictScore = model.predict(validation_x)        
+
+    return predictScore
+
+
+predictScor = []
+predictScore = np.array(predictScor)
+for speaker in speakers:
+    np.append(predictScore, getdata(speaker).flatten())
+
+
+print(predictScore.shape)
 """
 
-runModel("No Speaker")
+"""
+from sklearn.preprocessing import StandardScaler
+scaler = StandardScaler()
+scaler.fit(predictScore)
+scaled_data = scaler.transform(predictScore)
+
+from sklearn.decomposition import PCA
+
+pca = PCA(n_components=2)
+pca.fit(scaled_data)
+x_pca = pca.transform(scaled_data)
+
+print(scaled_data.shape)
+print(x_pca.shape)
+
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(8,6))
+plt.scatter(x_pca[:,0],x_pca[:,1],cmap='rainbow')
+plt.xlabel('First principal component')
+plt.ylabel('Second Principal Component')
+plt.show()
+"""
