@@ -88,6 +88,57 @@ def runModel(speaker):
 
 ###############################
 
+
+model.pop()
+
+
+def getdata(file):
+    audio_Paths = findAllAudioFilePaths(file)
+
+    onePath = []
+    onePath.append(audio_Paths[0])
+
+    audioFeatureArray = getFeatures(audio_Paths) 
+
+    validation_x = np.array(audioFeatureArray)
+    
+    predictScore = model.predict(validation_x)        
+
+    return predictScore
+
+
+predictScor = []
+
+for speaker in range(2):
+    
+    print(speaker) 
+     
+    if(speaker == 0):
+        predictScor = getdata(str(speaker+1))
+        predictScore = np.array(predictScor)
+    else:
+        
+        data = getdata(str(speaker+1))
+        predictScore = np.append(predictScore, data, axis=0)
+      
+    
+
+print("***------")
+print(predictScore.shape)
+
+
+for i in range(60,73):
+    thresh = i
+    clusters = hcluster.fclusterdata(predictScore, thresh, criterion="distance", metric='euclidean', method='centroid')
+
+    #print( len(set(clusters))  )
+    #print(clusters)
+    title = "threshold: %f, number of clusters: %d" % (thresh, len(set(clusters)))
+    print(title)
+
+
+
+
 """
 runModel("No Speaker")
 for speaker in speakers:
@@ -99,7 +150,8 @@ for speaker in speakers:
 #embeddings = model.layers[numLayers-1].get_weights()[0]
 #print(embeddings)
 
-model.pop()
+
+"""
 model.pop()
  
  
@@ -117,6 +169,7 @@ clusters = hcluster.fclusterdata(predictScore, thresh, criterion="distance")
 
 print( len(set(clusters))  )
 print(clusters)
+"""
 
 """
 plt.scatter(np.transpose(predictScore), c=clusters)
