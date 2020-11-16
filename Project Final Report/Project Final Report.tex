@@ -1,0 +1,116 @@
+\documentclass[10pt,twocolumn,letterpaper]{article}
+
+\usepackage{cvpr}
+\usepackage{times}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage[table,xcdraw]{xcolor}
+
+% Include other packages here, before hyperref.
+
+% If you comment hyperref and then uncomment it, you should delete
+% egpaper.aux before re-running latex.  (Or just hit 'q' on the first latex
+% run, let it finish, and you should be clear).
+\usepackage[breaklinks=true,bookmarks=false]{hyperref}
+
+\cvprfinalcopy % *** Uncomment this line for the final submission
+
+\def\cvprPaperID{****} % *** Enter the CVPR Paper ID here
+\def\httilde{\mbox{\tt\raisebox{-.5ex}{\symbol{126}}}}
+
+% Pages are numbered in submission mode, and unnumbered in camera-ready
+%\ifcvprfinal\pagestyle{empty}\fi
+\setcounter{page}{1}
+\begin{document}
+
+%%%%%%%%% TITLE
+\title{Unsupervised Speaker Identification}
+
+\author{Thivakkar Mahendran\\
+University of Massachusetts Amherst\\
+%Institution1 address\\
+{\tt\small tmahendran@umass.edu}
+% For a paper whose authors are all at the same institution,
+% omit the following lines up until the closing ``}''.
+% Additional authors and addresses can be added with ``\and'',
+% just like the second author.
+% To save space, use either the email address or home page, not both
+\and
+Varun Prasad\\
+University of Massachusetts Amherst\\
+%First line of institution2 address\\
+{\tt\small varunanantha@umass.edu}
+}
+
+\maketitle
+%\thispagestyle{empty}
+
+
+
+%%%%%%%%% BODY TEXT
+
+\section{Abstract}
+
+
+Filled by Varun
+
+%------------------------------------------------------------------------
+
+
+\section{Introduction}
+
+A voice recorder makes it super convenient to take notes or preserve the minutes of a meeting. In order to make the experience better, there are tools that can be used to automatically convert speech to text. One area where this tool currently fails at is identifying the speaker. The problem that we are trying to solve is to identify the speaker. Our ultimate goal is to build a project where we are able to record a meeting and which particular person speaks at a specific time and what they speak.
+
+It would be cumbersome and time consuming to record each speaker’s voice beforehand and train a speaker recognition model on the speakers’ voice. The goal is to make this tool predict the speaker without prior training on the speaker’s voice. This would be an unsupervised learning project. 
+
+For example, if two speakers were talking in a meeting we would like our tool to give an output: 
+\\  {\bf Speaker1}: Hey, How are you? 
+\\ {\bf Speaker2}: I’m doing well.
+\\ {\bf Speaker2}: I was able to complete the tasks that we talked about last week
+\\ {\bf Speaker1}: That’s great.
+
+These two speakers’ voices have not been trained before but still the program would identify the two speakers just by getting the features from their voice. 
+%------------------------------------------------------------------------
+
+\section{Background/Related Work}
+
+Filled by Varun
+
+%------------------------------------------------------------------------
+
+\section{Approach}
+
+Filled by Thivakkar
+
+%------------------------------------------------------------------------
+
+\section{Experiment}
+
+Filled by Varun
+
+%------------------------------------------------------------------------
+
+\section{Conclusion}
+
+Filled by Varun
+
+%------------------------------------------------------------------------
+
+
+\begin{thebibliography}{1}
+
+    \bibitem{Barnard}  Barnard, Dom. “Average Speaking Rate and Words per Minute.” VirtualSpeech, VirtualSpeech, 20 Jan. 2018, virtualspeech.com/blog/average-speaking-rate-words-per-minute. 
+  
+    \bibitem{Sharma}  Sharma, Usha, et al. “Study of Robust Feature Extraction Techniques for Speech Recognition System.” 2015 International Conference on Futuristic Trends on Computational Analysis and Knowledge Management (ABLAZE), 2015, doi:10.1109/ablaze.2015.7154944. 
+  
+    \bibitem{Author}“Analytical Review of Feature Extraction Technique for Automatic Speech Recognition.” International Journal of Science and Research (IJSR), vol. 4, no. 11, 2015, pp. 2156–2161., doi:10.21275/v4i11.nov151681. 
+  
+  
+\end{thebibliography}
+
+
+
+\end{document}
