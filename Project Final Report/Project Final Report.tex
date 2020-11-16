@@ -83,12 +83,20 @@ Filled by Varun
 
 \section{Approach}
 
+Real-world applications of such a system would require an unsupervised learning approach to the problem since it is extremely difficult to re-train the model with the voices of all the speakers in every particular situation, and also there would be no labels to train the model on. It is also difficult to use an entirely unsupervised approach during the training phase because there would be absolutely no way to know whether the model is trained properly. Hence, evaluation of the model would become almost impossible.
+
+Because of this, we have chosen to go with a hybrid approach where we train the model using a supervised approach over labelled data, and then use an unsupervised approach for the final classification. The first phase was done by building a fully-connected neural network and training over the 8-speaker dataset and random speaker dataset which will learn to classify the different speakers. 
+
+The second phase was implemented by cutting off the final classification layer of the neural net, and getting the embedding vector. The embedding vector at every interval, in our case 1 second, was compared to previous embeddings using a distance metric and a clustering algorithm  to decide if the speaker is the same or not.
+
 \subsection{Dataset}
 
 The dataset that we intially planned to use was VoxCeleb, which is a large scale audio-visual dataset of human speech. The dataset contains 7,000+ speakers, 1 million+ utterances, and 2,000+ hours of audio. The total size of the dataset was around 250 GB. The dataset was really huge in terms of computational complexity and also space required to store and train the model. After weeks of trying to use the dataset, we decided to build our own dataset. 
 
 We decided to create our own dataset so we could tailor the dataset to exactly suit our project. We built a pipeline to scrape audio from YouTube videos, and then split a whole audio into chunks of 1 second audio clips. We decided to create 1 second audio clips because when this model is getting used in the real world, we want to recognize the speaker instantly with as little of a delay as possible. According to the article \cite{Barnard} published by virtualspeech, an average person speaks about 150 words per minute, which is about 2.5 words per second. This is enough to extract useful features from the person’s speech.  
 
+
+\subsubsection{Dataset of 8 speakers}
 
 The YouTube videos that we chose to include in our dataset were speeches/monologues from celebrities. We thought this would be the best way to build a labeled dataset of audios of different people. The dataset includes 7 celebrities (Obama, Hillary, Ivanka, Trump, No Speaker, Modi, Xi-Jinping, and Chadwick-Boseman) and one “no speaker” class which includes multiple background noises without anyone speaking. We included the “no speaker” class so that the model can recognize when no one is speaking.  We wanted the dataset to be as diverse as possible, that is why we included speakers of both genders, different races, and also different languages. The current dataset has a size of 4.1+ hours. 
 
@@ -105,10 +113,39 @@ The YouTube videos that we chose to include in our dataset were speeches/monolog
     \multicolumn{1}{|l|}{\textbf{Chadwick-Boseman}} & Male            & English           & Black         & 27.1 mins       \\ \hline
     \multicolumn{1}{|l|}{\textbf{No Speaker}}       & N/A             & N/A               & N/A           & 39.6 mins       \\ \hline
     \end{tabular}
-    \caption{Details of the dataset}
+    \caption{Details of the 8 speaker dataset}
     \label{Dataset}
 \end{table}
 
+\subsubsection{Dataset of random speakers}
+
+We wanted to experiment on the quality and quantity of our dataset to see the impact on the speaker recognition model. The dataset that we created before only had 8 speakers but each speaker had multiple videos combining to more than 30 mins each. In the dataset of random speakers, we got audio files of length 2-3 minutes of 50 speakers. In this dataset we increased the amount of speakers but limited to 1 audio file (2-3 minutes) per speaker. 
+
+The audios of the speakers were obtained from random youtube videos and voice recordings. We only chose audios which had only one speaker speaking in the whole audio file and checked if there were no background music or sound. We limited the audio file to 2-3 minutes so we could have multiple speakers. The table \ref{tab:random-speaker-dataset} is a snippet of the youtube videos used to create the random speaker dataset.
+
+
+\begin{table}[h]
+    \begin{tabular}{|l|l|l|}
+    \hline
+    \textbf{YouTube Title}                                    & \textbf{Youtube Channel Page} & \textbf{Video Length (mins)} \\ \hline
+    How to evaluate expressions with two variables            & Khan Academy                  & 2:04                         \\ \hline
+    2020 Rock \& Roll Hall of Fame Acceptance Speech          & Rock \& Roll Hall of Fame     & 2:31                         \\ \hline
+    A look at U.S. President-elect Joe Biden’s victory speech & CTV News                      & 3:32                         \\ \hline
+    Open Office Math                                          & bthomp2112                    & 2:46                         \\ \hline
+    How to Get Stuff Done When You Have ADHD                  & How to ADHD                   & 4:45                         \\ \hline
+    How Online Math Tutoring via Skype Works                  & devinhenson1                  & 2:38                         \\ \hline
+    \end{tabular}
+    \caption{A snippet of random speaker dataset}
+    \label{tab:random-speaker-dataset}
+    \end{table}
+
+\subsection{Supervised speaker recognition}
+
+
+\subsection{Using embedding vector and clustering for unsupervised speaker recognition} 
+
+
+\subsection{No speaker recognition model} 
 
 %------------------------------------------------------------------------
 
