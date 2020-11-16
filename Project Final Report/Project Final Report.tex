@@ -83,7 +83,32 @@ Filled by Varun
 
 \section{Approach}
 
-Filled by Thivakkar
+\subsection{Dataset}
+
+The dataset that we intially planned to use was VoxCeleb, which is a large scale audio-visual dataset of human speech. The dataset contains 7,000+ speakers, 1 million+ utterances, and 2,000+ hours of audio. The total size of the dataset was around 250 GB. The dataset was really huge in terms of computational complexity and also space required to store and train the model. After weeks of trying to use the dataset, we decided to build our own dataset. 
+
+We decided to create our own dataset so we could tailor the dataset to exactly suit our project. We built a pipeline to scrape audio from YouTube videos, and then split a whole audio into chunks of 1 second audio clips. We decided to create 1 second audio clips because when this model is getting used in the real world, we want to recognize the speaker instantly with as little of a delay as possible. According to the article \cite{Barnard} published by virtualspeech, an average person speaks about 150 words per minute, which is about 2.5 words per second. This is enough to extract useful features from the person’s speech.  
+
+
+The YouTube videos that we chose to include in our dataset were speeches/monologues from celebrities. We thought this would be the best way to build a labeled dataset of audios of different people. The dataset includes 7 celebrities (Obama, Hillary, Ivanka, Trump, No Speaker, Modi, Xi-Jinping, and Chadwick-Boseman) and one “no speaker” class which includes multiple background noises without anyone speaking. We included the “no speaker” class so that the model can recognize when no one is speaking.  We wanted the dataset to be as diverse as possible, that is why we included speakers of both genders, different races, and also different languages. The current dataset has a size of 4.1+ hours. 
+
+\begin{table}[h]
+    \begin{tabular}{l|l|l|l|l|}
+    \cline{2-5}
+                                                    & \textbf{Gender} & \textbf{Language} & \textbf{Race} & \textbf{Length} \\ \hline
+    \multicolumn{1}{|l|}{\textbf{Obama}}            & Male            & English           & Black         & 19.5 mins       \\ \hline
+    \multicolumn{1}{|l|}{\textbf{Hillary}}          & Female          & English           & White         & 57.5 mins       \\ \hline
+    \multicolumn{1}{|l|}{\textbf{Ivanka}}           & Female          & English           & White         & 17.9 mins       \\ \hline
+    \multicolumn{1}{|l|}{\textbf{Trump}}            & Male            & English           & White         & 41.6 mins       \\ \hline
+    \multicolumn{1}{|l|}{\textbf{Modi}}             & Male            & Hindi             & Asian         & 32.4 mins       \\ \hline
+    \multicolumn{1}{|l|}{\textbf{Xi-Jinping}}       & Male            & Chinese           & Asian         & 11.18 mins      \\ \hline
+    \multicolumn{1}{|l|}{\textbf{Chadwick-Boseman}} & Male            & English           & Black         & 27.1 mins       \\ \hline
+    \multicolumn{1}{|l|}{\textbf{No Speaker}}       & N/A             & N/A               & N/A           & 39.6 mins       \\ \hline
+    \end{tabular}
+    \caption{Details of the dataset}
+    \label{Dataset}
+\end{table}
+
 
 %------------------------------------------------------------------------
 
