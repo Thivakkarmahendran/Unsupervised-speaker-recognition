@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1605576268 "/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/Project Final Report.tex" "/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/Project Final Report.pdf" "Project Final Report" 1605576269
-  "/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/Project Final Report.aux" 1605576269 3643 4069a9bc46813c9eacac603779073289 ""
-  "/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/Project Final Report.tex" 1605576267 13548 65630dc6d4055bc68ea1d449fd81ce59 ""
+["pdflatex"] 1605581076 "/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/Project Final Report.tex" "/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/Project Final Report.pdf" "Project Final Report" 1605581077
+  "/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/Project Final Report.aux" 1605581077 4217 ebfd27628856909a6c065c426257bf17 ""
+  "/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/Project Final Report.tex" 1605581076 19074 3e3c81a5d14a0b08dd86e2888716e7ff ""
   "/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1136768653 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -87,15 +87,17 @@
   "/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1557342064 3277517 23507ed665b4dd9046f0f2a94bbef2be ""
   "/usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1557342086 4259635 562fc36ec496993777a6c428d8bfb811 ""
   "/usr/local/texlive/2019/texmf.cnf" 1557341546 577 d150fef99ac436ad1156e86b0892f6ef ""
-  "Project Final Report.aux" 1605576269 3643 4069a9bc46813c9eacac603779073289 "pdflatex"
-  "Project Final Report.tex" 1605576267 13548 65630dc6d4055bc68ea1d449fd81ce59 ""
+  "Project Final Report.aux" 1605581077 4217 ebfd27628856909a6c065c426257bf17 "pdflatex"
+  "Project Final Report.tex" 1605581076 19074 3e3c81a5d14a0b08dd86e2888716e7ff ""
   "cvpr.sty" 1506864032 8185 1f09b4535924bf997f66357aa9ee3654 ""
   "cvpr_eso.sty" 1506858108 3878 6aa7c08ff2621006e0603349e40a30a8 ""
   "eso-pic.sty" 1506858108 9460 d2935ae95b5cd343fcf5887ff530288d ""
   "images/8 class model.PNG" 1605575469 92399 bdb612725d5ce4349e53ba22e50032dc ""
+  "images/random speaker model.PNG" 1605577017 90425 88fcfc89cfe643bb794cd78e46a51ff4 ""
+  "images/thresholds.PNG" 1605579595 106930 ef204b636ca651fe5a912d3b240a428a ""
   (generated)
-  "/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/Project Final Report.log"
+  "Project Final Report.aux"
   "Project Final Report.pdf"
   "/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/Project Final Report.pdf"
-  "Project Final Report.aux"
+  "/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/Project Final Report.log"
   "Project Final Report.log"

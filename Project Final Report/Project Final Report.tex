@@ -168,12 +168,56 @@ The figure \ref{fig:8 speaker model} represents the model built to identify the 
     \label{fig:8 speaker model}
 \end{figure}
 
+\subsubsection{Random speaker recognition model}
+
+Similar to the 8 speaker recognition model, we experimented with different layers and hyperparameters to get us the best result. We finally decided to use a similar network structure that we used for the 8 speaker recognition model. Which is a 5-layer network. The first layer had the input size of 128 and the activation we chose was ReLU. The second layer has 64 as it’s input with ReLU activation. The third layer has 32 as it’s input with ReLU activation. The fourth layer has 16 as it’s input with ReLU activation. The final layer has a size of 50 with softmax activation. The optimizer used for the model was Adam with a learning rate of 3e-4. The loss was categorical cross entropy and the metric to analyze the model was accuracy. The total trainable parameters were 124,040. The figure \ref{fig:random speaker model} represents the model built to identify the 7 speakers and 1 “no-speaker” class.
+
+\begin{figure}[h]
+    \includegraphics[width=\linewidth]{{"images/random speaker model"}.PNG}
+    \caption{random speaker model}
+    \label{fig:random speaker model}
+\end{figure}
+
+We chose a similar neural network model as the 8 speaker recognition model because we wanted to see which dataset helped us recognize new speakers without prior training and didn’t want to change too many variables in the experiment. We also chose the similar neural network structure because we wanted the output of the embedding vector to be the same size for 8 speaker model and random speaker model. 
 
 
 \subsection{Using embedding vector and clustering for unsupervised speaker recognition} 
 
+Once the model was trained using the training data, we saved the model locally to use the model for unsupervised speaker recognition. The input for the unsupervised speaker recognition is 1 second audio files. Similar to creating the training set for the supervised learning model, we extract the same features from each audio file.
+
+Once the test data was ready, we passed the test data to the model. We didn’t want the model to output one of the 8 speakers or the random speakers. We wanted the embedding layer of the one above the last layer. So, we popped the last layer from the model and now the output of the model is an embedding vector of size 16 for each audio file. The embedding vector looked like: 
+
+[0, 0,  0,  0, 0, 57.781567,  0,   0,  44.595768,  0,  0,   13.87579,   0,  0,  0, 39.74966 ]
+
+After getting the embedding vectors of each audio file, we can use a clustering algorithm to figure out the number of clusters and which cluster each audio file belongs to. Each cluster represents a speaker. For example, after running the clustering algorithm on the embedding vectors we find out that there are 4 clusters. This means that there are in total 4 unique speakers talking. 
+
+For the clustering algorithm, we used scipy’s hierarchy fclusterdata. Based on the documentation page of scipy it says that: “Clusters the original observations in the n-by-m data matrix X (n observations in m dimensions), using the euclidean distance metric to calculate distances between original observations, performs hierarchical clustering using the single linkage algorithm, and forms flat clusters using the inconsistency method with t as the cut-off threshold.” 
+
+We experimented with different hyperparameters to get the best results in terms of the correct number of clusters. For the hierarchy fclusterdata algorithm we set criterion to distance, metric to euclidean, and method to centroid. We also had to choose a threshold for the clustering algorithm. We had to choose a threshold that worked best with different audio files and accurate enough to predict the right number of clusters and which cluster each audio file belonged to.
+
+There wasn’t an easy way to pick the right threshold. We ran the clustering algorithm with different thresholds and manually checked if the clustering algorithm grouped the audio files correctly. Figure \ref{fig: thresholds} shows an example of checking different thresholds.
+
+\begin{figure}[h]
+    \includegraphics[width=\linewidth]{{"images/thresholds"}.PNG}
+    \caption{testing different thresholds}
+    \label{fig: thresholds}
+\end{figure}
+
+The threshold we picked was 65, since it was the threshold which correctly identified the number of clusters for multiple different testing datasets. 
+
 
 \subsection{No speaker recognition model} 
+
+A problem that we noticed while building the unsupervised speaker recognition model was that the clustering algorithm created a different cluster for instances when no one was speaking. Since we created a class called “no speaker”, the clustering algorithm clustered that as a speaker too.
+
+In order to fix the problem, we had to create a no speaker recognition model, which is a binary neural network which outputs whether the audio file is a background noise without anyone speaking or if someone was speaking. In this instance there are only two classes.
+
+\textbf{MODEL DESCRIPTION - need to fill}
+
+
+While testing the unsupervised speaker recognition model, we first ran the 1 second audio file on the  No speaker recognition model. If the model outputs “no speaker” then we just output that the audio file contains no speaker. If the model outputs “speaker” then we took that audio file and ran it through the 8 speaker recognition model or random speaker recognition model to get the embedding layer and then run the clustering algorithm to find which speaker the audio file belonged to. This fixed the issue of the clustering algorithm considering background noises as a different cluster/speaker.
+
+
 
 \subsection{Live speaker recognition}
 
