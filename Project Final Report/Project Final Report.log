@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  16 NOV 2020 21:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  16 NOV 2020 22:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -385,32 +385,67 @@ Underfull \hbox (badness 2050) in paragraph at lines 218--219
 []\OT1/ptm/m/n/10 While test-ing the un-su-per-vised speaker recog-ni-tion
  []
 
+<"images/8 speaker - accuracy".PNG, id=56, 410.53375pt x 278.03876pt>
+File: "images/8 speaker - accuracy".PNG Graphic file (type png)
+<use "images/8 speaker - accuracy".PNG>
+Package pdftex.def Info: "images/8 speaker - accuracy".PNG  used on input line 234.
+(pdftex.def)             Requested size: 237.13594pt x 160.60075pt.
 
-Underfull \hbox (badness 7256) in paragraph at lines 243--244
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<"images/8 speaker - loss".PNG, id=57, 404.51125pt x 276.03125pt>
+File: "images/8 speaker - loss".PNG Graphic file (type png)
+<use "images/8 speaker - loss".PNG>
+Package pdftex.def Info: "images/8 speaker - loss".PNG  used on input line 240.
+(pdftex.def)             Requested size: 237.13594pt x 161.82089pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<"images/random speaker - accuracy".PNG, id=58, 396.48125pt x 289.08pt>
+File: "images/random speaker - accuracy".PNG Graphic file (type png)
+<use "images/random speaker - accuracy".PNG>
+Package pdftex.def Info: "images/random speaker - accuracy".PNG  used on input line 246.
+(pdftex.def)             Requested size: 237.13594pt x 172.90236pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<"images/random speaker - loss".PNG, id=59, 381.425pt x 285.065pt>
+File: "images/random speaker - loss".PNG Graphic file (type png)
+<use "images/random speaker - loss".PNG>
+Package pdftex.def Info: "images/random speaker - loss".PNG  used on input line 252.
+(pdftex.def)             Requested size: 237.13594pt x 177.22563pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 7256) in paragraph at lines 270--271
 \OT1/ptm/m/n/10 2018, virtualspeech.com/blog/average-speaking-rate-
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 254.
-[4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 254.
+[4 </Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/images/8 speaker - accuracy.PNG> </Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/images/8 speaker - loss.PNG> </Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/images/random speaker - accuracy.PNG>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 281.
+ [5
+
+ </Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/images/random speaker - loss.PNG>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 281.
  (/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/Project Final Report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 254.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 254.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 254.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 281.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 281.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 281.
  ) 
 Here is how much of TeX's memory you used:
- 6750 strings out of 492616
- 97651 string characters out of 6129482
- 200828 words of memory out of 5000000
- 10544 multiletter control sequences out of 15000+600000
+ 6779 strings out of 492616
+ 98541 string characters out of 6129482
+ 201022 words of memory out of 5000000
+ 10564 multiletter control sequences out of 15000+600000
  23160 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 32i,10n,35p,1093b,324s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 32i,10n,35p,1093b,430s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on "/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/Project Final Report.pdf" (4 pages, 262584 bytes).
+Output written on "/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/Project Final Report.pdf" (5 pages, 517828 bytes).
 PDF statistics:
- 87 PDF objects out of 1000 (max. 8388607)
- 70 compressed objects within 1 object stream
- 30 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 104 PDF objects out of 1000 (max. 8388607)
+ 78 compressed objects within 1 object stream
+ 35 named destinations out of 1000 (max. 500000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
