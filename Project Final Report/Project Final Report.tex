@@ -98,7 +98,8 @@ We decided to create our own dataset so we could tailor the dataset to exactly s
 
 \subsubsection{Dataset of 8 speakers}
 
-The YouTube videos that we chose to include in our dataset were speeches/monologues from celebrities. We thought this would be the best way to build a labeled dataset of audios of different people. The dataset includes 7 celebrities (Obama, Hillary, Ivanka, Trump, No Speaker, Modi, Xi-Jinping, and Chadwick-Boseman) and one “no speaker” class which includes multiple background noises without anyone speaking. We included the “no speaker” class so that the model can recognize when no one is speaking.  We wanted the dataset to be as diverse as possible, that is why we included speakers of both genders, different races, and also different languages. The current dataset has a size of 4.1+ hours. 
+The YouTube videos that we chose to include in our dataset were speeches/monologues from celebrities. We thought this would be the best way to build a labeled dataset of audios of different people. The dataset \ref{Dataset} includes 7 celebrities (Obama, Hillary, Ivanka, Trump, No Speaker, Modi, Xi-Jinping, and Chadwick-Boseman) and one “no speaker” class which includes multiple background noises without anyone speaking. We included the “no speaker” class so that the model can recognize when no one is speaking.  We wanted the dataset to be as diverse as possible, that is why we included speakers of both genders, different races, and also different languages. The current dataset has a size of 4.1+ hours. 
+
 
 \begin{table}[h]
     \begin{tabular}{l|l|l|l|l|}
@@ -110,42 +111,73 @@ The YouTube videos that we chose to include in our dataset were speeches/monolog
     \multicolumn{1}{|l|}{\textbf{Trump}}            & Male            & English           & White         & 41.6 mins       \\ \hline
     \multicolumn{1}{|l|}{\textbf{Modi}}             & Male            & Hindi             & Asian         & 32.4 mins       \\ \hline
     \multicolumn{1}{|l|}{\textbf{Xi-Jinping}}       & Male            & Chinese           & Asian         & 11.18 mins      \\ \hline
-    \multicolumn{1}{|l|}{\textbf{Chadwick-Boseman}} & Male            & English           & Black         & 27.1 mins       \\ \hline
+    \multicolumn{1}{|l|}{\textbf{Chadwick}}         & Male            & English           & Black         & 27.1 mins       \\ \hline
     \multicolumn{1}{|l|}{\textbf{No Speaker}}       & N/A             & N/A               & N/A           & 39.6 mins       \\ \hline
     \end{tabular}
     \caption{Details of the 8 speaker dataset}
     \label{Dataset}
 \end{table}
 
+
 \subsubsection{Dataset of random speakers}
 
-We wanted to experiment on the quality and quantity of our dataset to see the impact on the speaker recognition model. The dataset that we created before only had 8 speakers but each speaker had multiple videos combining to more than 30 mins each. In the dataset of random speakers, we got audio files of length 2-3 minutes of 50 speakers. In this dataset we increased the amount of speakers but limited to 1 audio file (2-3 minutes) per speaker. 
+We wanted to experiment on the quality and quantity of our dataset to see the impact on the speaker recognition model. The dataset that we created before only had 8 speakers but each speaker had multiple videos combining to more than 30 mins each. In the dataset of random speakers, we got audio files of length 2-3 minutes of \textbf{50 speakers}. In this dataset we increased the amount of speakers but limited to 1 audio file (2-3 minutes) per speaker. 
 
 The audios of the speakers were obtained from random youtube videos and voice recordings. We only chose audios which had only one speaker speaking in the whole audio file and checked if there were no background music or sound. We limited the audio file to 2-3 minutes so we could have multiple speakers. The table \ref{tab:random-speaker-dataset} is a snippet of the youtube videos used to create the random speaker dataset.
 
 
+
 \begin{table}[h]
-    \begin{tabular}{|l|l|l|}
-    \hline
-    \textbf{YouTube Title}                                    & \textbf{Youtube Channel Page} & \textbf{Video Length (mins)} \\ \hline
-    How to evaluate expressions with two variables            & Khan Academy                  & 2:04                         \\ \hline
-    2020 Rock \& Roll Hall of Fame Acceptance Speech          & Rock \& Roll Hall of Fame     & 2:31                         \\ \hline
-    A look at U.S. President-elect Joe Biden’s victory speech & CTV News                      & 3:32                         \\ \hline
-    Open Office Math                                          & bthomp2112                    & 2:46                         \\ \hline
-    How to Get Stuff Done When You Have ADHD                  & How to ADHD                   & 4:45                         \\ \hline
-    How Online Math Tutoring via Skype Works                  & devinhenson1                  & 2:38                         \\ \hline
-    \end{tabular}
-    \caption{A snippet of random speaker dataset}
-    \label{tab:random-speaker-dataset}
-    \end{table}
+        \begin{tabular}{|l|l|l|}
+        \hline
+        \textbf{YouTube Title}                                       & \textbf{Length} \\ \hline
+        How to evaluate expressions with two variables               & 2:04                         \\ \hline
+        2020 Rock \& Roll Hall of Fame Speech                        & 2:31                         \\ \hline
+        A look at U.S. President-elect Joe Biden                     & 3:32                         \\ \hline
+        Open Office Math                                             & 2:46                         \\ \hline
+        How to Get Stuff Done When You Have ADHD                     & 4:45                         \\ \hline
+        How Online Math Tutoring via Skype Works                     & 2:38                         \\ \hline
+        \end{tabular}
+        \caption{A snippet of random speaker dataset}
+        \label{tab:random-speaker-dataset}
+\end{table}
+ 
+
 
 \subsection{Supervised speaker recognition}
+
+\subsubsection{Features}
+
+The first step to build a supervised speaker recognition model is to extract useful features from the audio files. These features would be the training data. We looked at multiple research papers to choose the best features for speech recognition. The features we chose, based on \cite{Sharma} and \cite{Author}, to extract from the audio clips were:
+
+\begin{itemize}
+   \item MFCC (Mel-Frequency Cepstral Coefficients): coefficients used to detect the envelope of audio signals. Sounds produced by humans can be accurately represented by determining the envelope of the speech signal.
+   \item Zero-crossing rate: Number of times in a given time interval/frame that the amplitude of the speech signals passes through a value of zero. This feature is used to distinguish between periods of voiced and unvoiced sounds.
+   \item Spectral roll off: Measure of the amount of the right-skewedness of the power spectrum. That is, the roll-off point is the frequency below which 85\% of accumulated spectral magnitude is concentrated.
+\end{itemize}
+
+\subsubsection{8 speaker recognition model}
+
+To build the 8 speaker recognition model we experimented with different layers and hyperparameters to get us the best result. We finally chose a 5-layer network. The first layer had the input size of 128 and the activation we chose was ReLU. The second layer has 64 as it’s input with ReLU activation. The third layer has 32 as it’s input with ReLU activation. The fourth layer has 16 as it’s input with ReLU activation. The final layer has a size of 8 with softmax activation. The optimizer used for the model was Adam with a learning rate of 3e-4. The loss was categorical crossentropy and the metric to analyze the model was accuracy. The total trainable parameters were 123,768. 
+
+The figure \ref{fig:8 speaker model} represents the model built to identify the 7 speakers and 1 “no-speaker” class.
+
+\begin{figure}[h]
+    \includegraphics[width=\linewidth]{{"images/8 class model"}.PNG}
+    \caption{8 speaker model}
+    \label{fig:8 speaker model}
+\end{figure}
+
 
 
 \subsection{Using embedding vector and clustering for unsupervised speaker recognition} 
 
 
 \subsection{No speaker recognition model} 
+
+\subsection{Live speaker recognition}
+
+A python script has been created to get a live stream of audio data from the computer, process every 1 second audio clip by extracting features on the audio and then the features get passed to the model to get the last layer embedding vector. The new embedding vector is added to a dictionary. This dictionary contains all the previous embedding vectors. That dictionary is then used to run the clustering algorithm to find which cluster that last added embedding vector belongs to.  So every 1 second, the program will output the current speaker or “no speaker” if no one is talking. This is how an unsupervised speech recognition system works in real time.
 
 %------------------------------------------------------------------------
 
