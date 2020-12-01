@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  1 DEC 2020 17:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  1 DEC 2020 18:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -651,101 +651,118 @@ Package pdftex.def Info: "images/8 speaker - loss".PNG  used on input line 315.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (11.07277pt too wide) in paragraph at lines 328--338
+Underfull \hbox (badness 1097) in paragraph at lines 321--322
+[]\OT1/ptm/m/n/10 Table []2[] shows the con-fu-sion ma-trix for the dif-fer-
+ []
+
+
+Overfull \hbox (59.864pt too wide) in paragraph at lines 326--338
 [][] 
  []
 
-<"images/random speaker model".PNG, id=77, 561.09625pt x 317.185pt>
-File: "images/random speaker model".PNG Graphic file (type png)
-<use "images/random speaker model".PNG>
-Package pdftex.def Info: "images/random speaker model".PNG  used on input line 355.
-(pdftex.def)             Requested size: 237.13594pt x 134.04922pt.
-[4 </Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/images/8 class model.PNG> </Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/images/8 speaker - accuracy.PNG> </Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/images/8 speaker - loss.PNG>]
-<"images/random speaker - accuracy".PNG, id=94, 396.48125pt x 289.08pt>
-File: "images/random speaker - accuracy".PNG Graphic file (type png)
-<use "images/random speaker - accuracy".PNG>
-Package pdftex.def Info: "images/random speaker - accuracy".PNG  used on input line 365.
-(pdftex.def)             Requested size: 237.13594pt x 172.90236pt.
-<"images/random speaker - loss".PNG, id=95, 381.425pt x 285.065pt>
-File: "images/random speaker - loss".PNG Graphic file (type png)
-<use "images/random speaker - loss".PNG>
-Package pdftex.def Info: "images/random speaker - loss".PNG  used on input line 371.
-(pdftex.def)             Requested size: 237.13594pt x 177.22563pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (11.07277pt too wide) in paragraph at lines 349--359
+[][] 
+ []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<"images/no speaker model".PNG, id=96, 575.14874pt x 254.9525pt>
+[4 </Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/images/8 class model.PNG> </Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/images/8 speaker - accuracy.PNG> </Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/images/8 speaker - loss.PNG>]
+<"images/random speaker model".PNG, id=92, 561.09625pt x 317.185pt>
+File: "images/random speaker model".PNG Graphic file (type png)
+<use "images/random speaker model".PNG>
+Package pdftex.def Info: "images/random speaker model".PNG  used on input line 376.
+(pdftex.def)             Requested size: 237.13594pt x 134.04922pt.
+<"images/random speaker - accuracy".PNG, id=96, 396.48125pt x 289.08pt>
+File: "images/random speaker - accuracy".PNG Graphic file (type png)
+<use "images/random speaker - accuracy".PNG>
+Package pdftex.def Info: "images/random speaker - accuracy".PNG  used on input line 386.
+(pdftex.def)             Requested size: 237.13594pt x 172.90236pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<"images/random speaker - loss".PNG, id=97, 381.425pt x 285.065pt>
+File: "images/random speaker - loss".PNG Graphic file (type png)
+<use "images/random speaker - loss".PNG>
+Package pdftex.def Info: "images/random speaker - loss".PNG  used on input line 392.
+(pdftex.def)             Requested size: 237.13594pt x 177.22563pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<"images/no speaker model".PNG, id=98, 575.14874pt x 254.9525pt>
 File: "images/no speaker model".PNG Graphic file (type png)
 <use "images/no speaker model".PNG>
-Package pdftex.def Info: "images/no speaker model".PNG  used on input line 391.
+Package pdftex.def Info: "images/no speaker model".PNG  used on input line 412.
 (pdftex.def)             Requested size: 237.13594pt x 105.11862pt.
 
-Underfull \hbox (badness 1264) in paragraph at lines 398--399
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 1264) in paragraph at lines 419--420
 []\OT1/ptm/m/n/10 This model achieved val-i-da-tion ac-cu-racy of around
  []
 
-<"images/no speaker - accuracy".PNG, id=100, 418.56375pt x 288.07625pt>
+<"images/no speaker - accuracy".PNG, id=102, 418.56375pt x 288.07625pt>
 File: "images/no speaker - accuracy".PNG Graphic file (type png)
 <use "images/no speaker - accuracy".PNG>
-Package pdftex.def Info: "images/no speaker - accuracy".PNG  used on input line 402.
+Package pdftex.def Info: "images/no speaker - accuracy".PNG  used on input line 423.
 (pdftex.def)             Requested size: 237.13594pt x 163.20734pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<"images/no speaker - loss".PNG, id=101, 418.56375pt x 288.07625pt>
+<"images/no speaker - loss".PNG, id=103, 418.56375pt x 288.07625pt>
 File: "images/no speaker - loss".PNG Graphic file (type png)
 <use "images/no speaker - loss".PNG>
-Package pdftex.def Info: "images/no speaker - loss".PNG  used on input line 408.
+Package pdftex.def Info: "images/no speaker - loss".PNG  used on input line 429.
 (pdftex.def)             Requested size: 237.13594pt x 163.20734pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[5 </Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/images/random speaker model.PNG> </Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/images/random speaker - accuracy.PNG> </Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/images/random speaker - loss.PNG> </Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/images/no speaker model.PNG>]
-<"images/thresholds".PNG, id=118, 388.45125pt x 211.28937pt>
+[5 </Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/images/random speaker model.PNG> </Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/images/random speaker - accuracy.PNG> </Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/images/random speaker - loss.PNG>]
+<"images/thresholds".PNG, id=119, 388.45125pt x 211.28937pt>
 File: "images/thresholds".PNG Graphic file (type png)
 <use "images/thresholds".PNG>
-Package pdftex.def Info: "images/thresholds".PNG  used on input line 421.
+Package pdftex.def Info: "images/thresholds".PNG  used on input line 442.
 (pdftex.def)             Requested size: 237.13594pt x 128.98627pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 1107) in paragraph at lines 430--431
+Underfull \hbox (badness 1107) in paragraph at lines 451--452
 \OT1/ptm/m/n/10 be recorded with bet-ter sound equip-ment, a rel-a-tively
  []
+
+<"images/output".jpg, id=121, 439.6425pt x 357.13425pt>
+File: "images/output".jpg Graphic file (type jpg)
+<use "images/output".jpg>
+Package pdftex.def Info: "images/output".jpg  used on input line 456.
+(pdftex.def)             Requested size: 237.13594pt x 192.63164pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<"images/output".jpg, id=120, 439.6425pt x 357.13425pt>
-File: "images/output".jpg Graphic file (type jpg)
-<use "images/output".jpg>
-Package pdftex.def Info: "images/output".jpg  used on input line 435.
-(pdftex.def)             Requested size: 237.13594pt x 192.63164pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[6 </Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/images/no speaker - accuracy.PNG> </Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/images/no speaker - loss.PNG> </Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/images/thresholds.PNG>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 447.
+ [6 </Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/images/no speaker model.PNG> </Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/images/no speaker - accuracy.PNG> </Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/images/no speaker - loss.PNG> </Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/images/thresholds.PNG>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 468.
  [7
 
  </Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/images/output.jpg>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 447.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 468.
  (/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/Project Final Report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 447.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 447.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 468.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 468.
 Package logreq Info: Writing requests to '"Project Final Report".run.xml'.
 \openout1 = `"Project Final Report.run.xml"'.
 
  ) 
 Here is how much of TeX's memory you used:
- 13753 strings out of 492616
- 231126 string characters out of 6129482
- 525797 words of memory out of 5000000
- 17432 multiletter control sequences out of 15000+600000
+ 13755 strings out of 492616
+ 231151 string characters out of 6129482
+ 526797 words of memory out of 5000000
+ 17433 multiletter control sequences out of 15000+600000
  24844 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  35i,10n,37p,1126b,1131s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -782,10 +799,10 @@ pdfTeX warning (dest): name{cite.0@face2} has been referenced but does not exist
 pdfTeX warning (dest): name{cite.0@face1} has been referenced but does not exist, replaced by a fixed one
 
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/Project Final Report.pdf" (7 pages, 907047 bytes).
+Output written on "/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/Project Final Report.pdf" (7 pages, 908838 bytes).
 PDF statistics:
- 173 PDF objects out of 1000 (max. 8388607)
- 136 compressed objects within 2 object streams
- 55 named destinations out of 1000 (max. 500000)
+ 175 PDF objects out of 1000 (max. 8388607)
+ 138 compressed objects within 2 object streams
+ 56 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

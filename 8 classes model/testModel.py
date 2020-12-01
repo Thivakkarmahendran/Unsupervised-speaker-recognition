@@ -5,6 +5,7 @@ import time
 import librosa
 import os
 from glob import glob
+import time
 
 
 speakers = ["Obama", "Hillary", "Ivanka", "Trump", "No Speaker", "Modi", "Xi-Jinping", "Chadwick-Boseman"]
@@ -50,12 +51,15 @@ def findAllAudioFilePaths(speaker):
 
 def runModel(speaker):
    
+    print("getting audio paths")
     audio_Paths = findAllAudioFilePaths(speaker)
 
+    print("getting audio features")
     audioFeatureArray = getFeatures(audio_Paths) 
             
     validation_x = np.array(audioFeatureArray)
 
+    print("Predicting")
     predictScore = model.predict(validation_x)        
     classes = np.argmax(predictScore, axis = 1)
 
@@ -78,10 +82,10 @@ def runModel(speaker):
 
 ###############################
 
-"""
+
 for speaker in speakers:
     runModel(speaker)
-"""
+
 
 """
 layers =  model.layers
@@ -92,4 +96,4 @@ embeddings = model.layers[numLayers-1].get_weights()[0]
 print(embeddings.shape)
 """
 
-runModel("No Speaker")
+#runModel("No Speaker")

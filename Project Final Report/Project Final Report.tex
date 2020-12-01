@@ -318,6 +318,27 @@ This model achieved validation accuracy of around 99\% on the data, and a loss o
 \end{figure}
 
 
+Table \ref{Confusion matrix} shows the confusion matrix for the different classes (speakers): Obama(1), Hillary(2), Ivanka(3), Trump(4), No Speaker(5), Modi(6), Xi-Jinping(7), and Chadwick-Boseman(8). It is seen from the confusion matrix that the model is able to do a very good job predicting each of the speakers.
+
+
+
+\begin{table}[h]
+    \begin{tabular}{l|l|l|l|l|l|l|l|l|}
+    \cline{2-9}
+                                     & \textbf{1}                    & \textbf{2}                    & \textbf{3}                    & \textbf{4}                    & 5                             & \textbf{6}                    & \textbf{7}                    & \textbf{8}                    \\ \hline
+    \multicolumn{1}{|l|}{\textbf{1}} & \cellcolor[HTML]{67FD9A}0.998 & 0.000                         & 0.000                         & 0.001                         & 0.000                         & 0.001                         & 0.000                         & 0.000                         \\ \hline
+    \multicolumn{1}{|l|}{\textbf{2}} & 0.000                         & \cellcolor[HTML]{67FD9A}0.996 & 0.000                         & 0.001                         & 0.002                         & 0.001                         & 0.000                         & 0.000                         \\ \hline
+    \multicolumn{1}{|l|}{\textbf{3}} & 0.001                         & 0.000                         & \cellcolor[HTML]{67FD9A}0.999 & 0.000                         & 0.000                         & 0.000                         & 0.000                         & 0.000                         \\ \hline
+    \multicolumn{1}{|l|}{\textbf{4}} & 0.000                         & 0.001                         & 0.000                         & \cellcolor[HTML]{67FD9A}0.996 & 0.000                         & 0.002                         & 0.000                         & 0.000                         \\ \hline
+    \multicolumn{1}{|l|}{\textbf{5}} & 0.000                         & 0.000                         & 0.000                         & 0.000                         & \cellcolor[HTML]{67FD9A}1.000 & 0.000                         & 0.000                         & 0.000                         \\ \hline
+    \multicolumn{1}{|l|}{\textbf{6}} & 0.000                         & 0.001                         & 0.000                         & 0.000                         & 0.000                         & \cellcolor[HTML]{67FD9A}0.999 & 0.000                         & 0.000                         \\ \hline
+    \multicolumn{1}{|l|}{\textbf{7}} & 0.000                         & 0.000                         & 0.000                         & 0.000                         & 0.003                         & 0.000                         & \cellcolor[HTML]{67FD9A}0.997 & 0.000                         \\ \hline
+    \multicolumn{1}{|l|}{\textbf{8}} & 0.000                         & 0.001                         & 0.000                         & 0.000                         & 0.001                         & 0.000                         & 0.001                         & \cellcolor[HTML]{67FD9A}0.998 \\ \hline
+    \end{tabular}
+    \caption{Confusion matrix}
+    \label{Confusion matrix}
+\end{table}
+
 \subsubsection{Random speaker dataset}
 
 We wanted to experiment on the quality and quantity of our dataset to see the impact on the speaker recognition model. The dataset that we created before only had 8 speakers but each speaker had multiple videos combining to more than 30 minutes each. In the dataset of random speakers, we got audio files of length 2-3 minutes of \textbf{50 speakers}. In this dataset we increased the amount of speakers but limited the number of audio files to 1 audio file (2-3 minutes) per speaker. 
