@@ -1,0 +1,64 @@
+This is BibTeX, Version 0.99d (TeX Live 2019)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: Project Final Report.aux
+The style file: biblatex.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: Project_Final_Report-blx.bib
+Database file #2: references.bib
+Biblatex version: 3.11
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 17 entries,
+            6304 wiz_defined-function locations,
+            1288 strings with 11968 characters,
+and the built_in function-call counts, 107282 in all, are:
+= -- 7979
+> -- 1704
+< -- 337
++ -- 2687
+- -- 702
+* -- 7962
+:= -- 12340
+add.period$ -- 0
+call.type$ -- 17
+change.case$ -- 122
+chr.to.int$ -- 55
+cite$ -- 32
+duplicate$ -- 10947
+empty$ -- 9891
+format.name$ -- 1130
+if$ -- 21471
+int.to.chr$ -- 0
+int.to.str$ -- 34
+missing$ -- 0
+newline$ -- 572
+num.names$ -- 591
+pop$ -- 5838
+preamble$ -- 1
+purify$ -- 246
+quote$ -- 0
+skip$ -- 2430
+stack$ -- 0
+substring$ -- 14806
+swap$ -- 2229
+text.length$ -- 379
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 566
+warning$ -- 0
+while$ -- 1657
+width$ -- 0
+write$ -- 556

@@ -1,0 +1,583 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.0 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{none/global//global/global}
+  \entry{face1}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=POM}{%
+         family={Parkhi},
+         familyi={P\bibinitperiod},
+         given={Omkar\bibnamedelima M.},
+         giveni={O\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=VA}{%
+         family={Vedaldi},
+         familyi={V\bibinitperiod},
+         given={Andrea},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=ZA}{%
+         family={Zisserman},
+         familyi={Z\bibinitperiod},
+         given={Andrew},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{POMVAZA1}
+    \strng{fullhash}{POMVAZA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{British Machine Vision Conference}
+    \field{title}{Deep Face Recognition}
+    \field{year}{2015}
+  \endentry
+
+  \entry{face2}{article}{}
+    \name{author}{3}{}{%
+      {{hash=SF}{%
+         family={Schroff},
+         familyi={S\bibinitperiod},
+         given={Florian},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Kalenichenko},
+         familyi={K\bibinitperiod},
+         given={Dmitry},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=PJ}{%
+         family={Philbin},
+         familyi={P\bibinitperiod},
+         given={James},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{SFKDPJ1}
+    \strng{fullhash}{SFKDPJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1109/cvpr.2015.7298682
+    \endverb
+    \field{isbn}{9781467369640}
+    \field{title}{FaceNet: A unified embedding for face recognition and
+  clustering}
+    \verb{url}
+    \verb http://dx.doi.org/10.1109/CVPR.2015.7298682
+    \endverb
+    \field{journaltitle}{2015 IEEE Conference on Computer Vision and Pattern
+  Recognition (CVPR)}
+    \field{year}{2015}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{lip}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=CJS}{%
+         family={Chung},
+         familyi={C\bibinitperiod},
+         given={Joon\bibnamedelima Son},
+         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=ZA}{%
+         family={Zisserman},
+         familyi={Z\bibinitperiod},
+         given={Andrew},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CJSZA1}
+    \strng{fullhash}{CJSZA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{British Machine Vision Conference}
+    \field{title}{Lip Reading in Profile}
+    \field{year}{2017}
+  \endentry
+
+  \entry{tele}{article}{}
+    \name{author}{4}{}{%
+      {{hash=PDD}{%
+         family={Petrovska-Delacrétaz},
+         familyi={P\bibinithyphendelim D\bibinitperiod},
+         given={Dijana},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=HJ}{%
+         family={Hennebert},
+         familyi={H\bibinitperiod},
+         given={Jean},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MH}{%
+         family={Melin},
+         familyi={M\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=GD}{%
+         family={Genoud},
+         familyi={G\bibinitperiod},
+         given={Dominique},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PDD+1}
+    \strng{fullhash}{PDDHJMHGD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1016/S0167-6393(99)00082-5
+    \endverb
+    \field{title}{POLYCOST: A telephone-speech database for speaker
+  recognition}
+    \field{volume}{31}
+    \field{journaltitle}{Speech Communication}
+    \field{month}{06}
+    \field{year}{2000}
+  \endentry
+
+  \entry{aussie}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=MJB}{%
+         family={{Millar}},
+         familyi={M\bibinitperiod},
+         given={J.\bibnamedelima B.},
+         giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=VJP}{%
+         family={{Vonwiller}},
+         familyi={V\bibinitperiod},
+         given={J.\bibnamedelima P.},
+         giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=HJM}{%
+         family={{Harrington}},
+         familyi={H\bibinitperiod},
+         given={J.\bibnamedelima M.},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=DPJ}{%
+         family={{Dermody}},
+         familyi={D\bibinitperiod},
+         given={P.\bibnamedelima J.},
+         giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MJB+1}
+    \strng{fullhash}{MJBVJPHJMDPJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of ICASSP '94. IEEE International Conference
+  on Acoustics, Speech and Signal Processing}
+    \verb{doi}
+    \verb 10.1109/ICASSP.1994.389346
+    \endverb
+    \field{pages}{I/97\bibrangedash I100 vol.1}
+    \field{title}{The Australian National Database of Spoken Language}
+    \field{volume}{i}
+    \field{year}{1994}
+  \endentry
+
+  \entry{traditional}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HJHL}{%
+         family={{Hansen}},
+         familyi={H\bibinitperiod},
+         given={J.\bibnamedelima H.\bibnamedelima L.},
+         giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim
+  L\bibinitperiod},
+      }}%
+      {{hash=HT}{%
+         family={{Hasan}},
+         familyi={H\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HJHLHT1}
+    \strng{fullhash}{HJHLHT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1109/MSP.2015.2462851
+    \endverb
+    \field{number}{6}
+    \field{pages}{74\bibrangedash 99}
+    \field{title}{"Speaker Recognition by Machines and Humans: A tutorial
+  review}
+    \field{volume}{32}
+    \field{journaltitle}{IEEE Signal Processing Magazine}
+    \field{year}{2015}
+  \endentry
+
+  \entry{plda}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KA}{%
+         family={Khosravani},
+         familyi={K\bibinitperiod},
+         given={Abbas},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=HMM}{%
+         family={Homayounpour},
+         familyi={H\bibinitperiod},
+         given={Mohammad\bibnamedelima M.},
+         giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KAHMM1}
+    \strng{fullhash}{KAHMM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.csl.2017.04.003
+    \endverb
+    \field{issn}{0885-2308}
+    \field{pages}{457 \bibrangedash  474}
+    \field{title}{A PLDA approach for language and text independent speaker
+  recognition}
+    \verb{url}
+    \verb http://www.sciencedirect.com/science/article/pii/S0885230816302972
+    \endverb
+    \field{volume}{45}
+    \field{journaltitle}{Computer Speech & Language}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Nagrani_2017}{article}{}
+    \name{author}{3}{}{%
+      {{hash=NA}{%
+         family={Nagrani},
+         familyi={N\bibinitperiod},
+         given={Arsha},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=CJS}{%
+         family={Chung},
+         familyi={C\bibinitperiod},
+         given={Joon\bibnamedelima Son},
+         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=ZA}{%
+         family={Zisserman},
+         familyi={Z\bibinitperiod},
+         given={Andrew},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ISCA}%
+    }
+    \strng{namehash}{NACJSZA1}
+    \strng{fullhash}{NACJSZA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.21437/interspeech.2017-950
+    \endverb
+    \field{title}{VoxCeleb: A Large-Scale Speaker Identification Dataset}
+    \verb{url}
+    \verb http://dx.doi.org/10.21437/Interspeech.2017-950
+    \endverb
+    \field{journaltitle}{Interspeech 2017}
+    \field{year}{2017}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{McLaren2016TheSI}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=MM}{%
+         family={McLaren},
+         familyi={M\bibinitperiod},
+         given={Mitchell},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=FL}{%
+         family={Ferrer},
+         familyi={F\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=CD}{%
+         family={Cast{\'a}n},
+         familyi={C\bibinitperiod},
+         given={Diego},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=LA}{%
+         family={Lawson},
+         familyi={L\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MM+1}
+    \strng{fullhash}{MMFLCDLA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{INTERSPEECH}
+    \field{title}{The Speakers in the Wild (SITW) Speaker Recognition Database}
+    \field{year}{2016}
+  \endentry
+
+  \entry{base}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CJS}{%
+         family={Chung},
+         familyi={C\bibinitperiod},
+         given={Joon\bibnamedelima Son},
+         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=NA}{%
+         family={Nagrani},
+         familyi={N\bibinitperiod},
+         given={Arsha},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=ZA}{%
+         family={Zisserman},
+         familyi={Z\bibinitperiod},
+         given={Andrew},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ISCA}%
+    }
+    \strng{namehash}{CJSNAZA1}
+    \strng{fullhash}{CJSNAZA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.21437/interspeech.2018-1929
+    \endverb
+    \field{title}{VoxCeleb2: Deep Speaker Recognition}
+    \verb{url}
+    \verb http://dx.doi.org/10.21437/Interspeech.2018-1929
+    \endverb
+    \field{journaltitle}{Interspeech 2018}
+    \field{year}{2018}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{li2017deep}{misc}{}
+    \name{author}{9}{}{%
+      {{hash=LC}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Chao},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=MX}{%
+         family={Ma},
+         familyi={M\bibinitperiod},
+         given={Xiaokong},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=JB}{%
+         family={Jiang},
+         familyi={J\bibinitperiod},
+         given={Bing},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=LX}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Xiangang},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=ZX}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Xuewei},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=LX}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Xiao},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=CY}{%
+         family={Cao},
+         familyi={C\bibinitperiod},
+         given={Ying},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Kannan},
+         familyi={K\bibinitperiod},
+         given={Ajay},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=ZZ}{%
+         family={Zhu},
+         familyi={Z\bibinitperiod},
+         given={Zhenyao},
+         giveni={Z\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LC+1}
+    \strng{fullhash}{LCMXJBLXZXLXCYKAZZ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{eprint}
+    \verb 1705.02304
+    \endverb
+    \field{title}{Deep Speaker: an End-to-End Neural Speaker Embedding System}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs.CL}
+    \field{year}{2017}
+  \endentry
+
+  \entry{deep}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=SD}{%
+         family={Snyder},
+         familyi={S\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=GRD}{%
+         family={Garcia-Romero},
+         familyi={G\bibinithyphendelim R\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=PD}{%
+         family={Povey},
+         familyi={P\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=KS}{%
+         family={Khudanpur},
+         familyi={K\bibinitperiod},
+         given={Sanjeev},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SD+1}
+    \strng{fullhash}{SDGRDPDKS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.21437/Interspeech.2017-620
+    \endverb
+    \field{pages}{999\bibrangedash 1003}
+    \field{title}{Deep Neural Network Embeddings for Text-Independent Speaker
+  Verification}
+    \field{month}{08}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Barnard}{article}{}
+    \name{author}{1}{}{%
+      {{hash=BD}{%
+         family={Barnard},
+         familyi={B\bibinitperiod},
+         given={Dom},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BD1}
+    \strng{fullhash}{BD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Average Speaking Rate and Words per Minute}
+    \verb{url}
+    \verb https://virtualspeech.com/blog/average-speaking-rate-words-per-minute
+    \endverb
+    \field{month}{01}
+    \field{year}{2018}
+  \endentry
+
+  \entry{Sharma}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=SU}{%
+         family={{Sharma}},
+         familyi={S\bibinitperiod},
+         given={U.},
+         giveni={U\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={{Maheshkar}},
+         familyi={M\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=MAN}{%
+         family={{Mishra}},
+         familyi={M\bibinitperiod},
+         given={A.\bibnamedelima N.},
+         giveni={A\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SUMSMAN1}
+    \strng{fullhash}{SUMSMAN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2015 International Conference on Futuristic Trends on
+  Computational Analysis and Knowledge Management (ABLAZE)}
+    \verb{doi}
+    \verb 10.1109/ABLAZE.2015.7154944
+    \endverb
+    \field{pages}{654\bibrangedash 658}
+    \field{title}{Study of robust feature extraction techniques for speech
+  recognition system}
+    \field{year}{2015}
+  \endentry
+
+  \entry{Sonam}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SPJS}{%
+         family={Sonam\bibnamedelima Pal},
+         familyi={S\bibinitperiod\bibinitdelim P\bibinitperiod},
+         given={Jaikaran\bibnamedelima Singh},
+         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SPJS1}
+    \strng{fullhash}{SPJS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{2156 \bibrangedash  2161}
+    \field{title}{Analytical Review of Feature Extraction Technique for
+  Automatic Speech Recognition}
+    \verb{url}
+    \verb https://www.ijsr.net/search_index_results_paperid.php?id=NOV151681
+    \endverb
+    \field{volume}{4}
+    \field{year}{2015}
+  \endentry
+
+  \entry{scipy}{online}{}
+    \field{labeltitlesource}{title}
+    \field{title}{SciPy documentation for fclusterdata}
+    \verb{url}
+    \verb https://docs.scipy.org/doc/scipy/reference/generated/scipy.cluster.hi
+    \verb erarchy.fclusterdata.html#scipy.cluster.hierarchy.fclusterdata
+    \endverb
+  \endentry
+\enddatalist
+\endinput
