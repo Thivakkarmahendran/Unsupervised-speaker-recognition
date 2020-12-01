@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  30 NOV 2020 19:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  1 DEC 2020 00:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -655,12 +655,12 @@ Overfull \hbox (11.07277pt too wide) in paragraph at lines 328--338
 [][] 
  []
 
-[4 </Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/images/8 class model.PNG> </Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/images/8 speaker - accuracy.PNG> </Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/images/8 speaker - loss.PNG>]
-<"images/random speaker model".PNG, id=90, 561.09625pt x 317.185pt>
+<"images/random speaker model".PNG, id=77, 561.09625pt x 317.185pt>
 File: "images/random speaker model".PNG Graphic file (type png)
 <use "images/random speaker model".PNG>
 Package pdftex.def Info: "images/random speaker model".PNG  used on input line 354.
 (pdftex.def)             Requested size: 237.13594pt x 134.04922pt.
+[4 </Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/images/8 class model.PNG> </Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/images/8 speaker - accuracy.PNG> </Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/images/8 speaker - loss.PNG>]
 <"images/random speaker - accuracy".PNG, id=94, 396.48125pt x 289.08pt>
 File: "images/random speaker - accuracy".PNG Graphic file (type png)
 <use "images/random speaker - accuracy".PNG>
@@ -674,6 +674,9 @@ Package pdftex.def Info: "images/random speaker - loss".PNG  used on input line 
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 1107) has occurred while \output is active []
 
 <"images/thresholds".PNG, id=97, 388.45125pt x 211.28937pt>
 File: "images/thresholds".PNG Graphic file (type png)
@@ -742,7 +745,7 @@ pdfTeX warning (dest): name{cite.0@face2} has been referenced but does not exist
 pdfTeX warning (dest): name{cite.0@face1} has been referenced but does not exist, replaced by a fixed one
 
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/Project Final Report.pdf" (6 pages, 743596 bytes).
+Output written on "/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2020/CS 682/CS-682-Final-Project/Project Final Report/Project Final Report.pdf" (6 pages, 743358 bytes).
 PDF statistics:
  153 PDF objects out of 1000 (max. 8388607)
  123 compressed objects within 2 object streams

@@ -237,7 +237,7 @@ A problem that we noticed while building the unsupervised speaker recognition mo
 
 In order to fix the problem, we had to create a no speaker recognition model, which is a binary neural network which outputs whether the audio file is a background noise without anyone speaking or if someone was speaking. In this instance there are only two classes.
 
-\textbf{MODEL DESCRIPTION - need to fill}
+%\textbf{MODEL DESCRIPTION - need to fill} ****************************************
 
 
 While testing the unsupervised speaker recognition model, we first ran the 1 second audio file on the No speaker recognition model. If the model outputs “no speaker” then we just output that the audio file contains no speaker. If the model outputs “speaker” then we took that audio file and ran it through the 8-speaker recognition model or random speaker recognition model to get the embedding vector and then ran the clustering algorithm to find which speaker the audio file belonged to. This fixed the issue of the clustering algorithm considering background noises as a different cluster/speaker. This method also saves the extra cost of having to run an audio segment where no one is speaking through the entire large network.
