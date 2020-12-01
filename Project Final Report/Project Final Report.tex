@@ -342,6 +342,7 @@ The audios of the speakers were obtained from random YouTube videos and voice re
 \subsubsection{Random speaker model}
 
 Similar to the 8-speaker recognition model, we experimented with different layers and hyperparameters. We decided to use a network architecture similar to the one we used for the 8-speaker recognition model, which is a 5-layer network. The only difference is that the last layer has a different size, which corresponds to the number of speakers in the respective dataset (50 in this nodel versus 8 in the previous model).
+
 \begin{itemize}[itemsep=-5pt]
     \item Layer 1 - Input size: 128, Activation: ReLU
     \item Layer 2 - Input size: 64, Activation: ReLU
@@ -373,6 +374,42 @@ This model achieved validation accuracy of around 92\% on the data, and a loss o
 \end{figure}
 
 We chose a similar neural network model in this experiment as the 8-speaker recognition model because we wanted to see which dataset helped us better recognize new speakers without prior training and didn't want to change too many variables in the experiment. We also chose a similar neural network structure because we wanted the output of the embedding vector to be the same size for the 8-speaker model and the random speaker model, in order to effectively compare the results.
+
+\subsection{No speaker recognition}
+
+The no speaker recognition model had to distinguish just between a speaker and no speaker. The model outputs a 1 if it is a speaker and a 0 if it's not a apeaker. The model is basically a binary classifer. We experimented with various hyperparameters and layers and found out we didn't need a huge complicated neural net to recognition the two classes.
+
+The model to recognition no speaker was a 3 layer neural net. The layers were:
+
+\begin{itemize}[itemsep=-5pt]
+    \item Layer 1 - Input size: 128, Activation: ReLU
+    \item Layer 2 - Input size: 16, Activation: ReLU
+    \item Layer 3 - Input size: 2, Activation: sigmoid
+\end{itemize}
+
+\begin{figure}[h]
+    \includegraphics[width=\linewidth]{{"images/no speaker model"}.PNG}
+    \caption{No speaker model}
+    \label{fig: No speaker model}
+\end{figure}
+
+The optimizer used for the model was Adam with a learning rate of 3e-4. The loss was binary cross entropy and the metric to analyze the model was accuracy. The total trainable parameters were 114,866. Figure \ref{fig: No speaker model} represents the model built to identify if a speaker is not speaking.
+
+This model achieved validation accuracy of around 99.9\% on the test data, and a loss of around 0.0035. Figure \ref{fig: No speaker model accuracy} shows the graph for validation accuracy over time, and Figure \ref{fig: No speaker model loss} shows the graph for the loss.
+
+
+\begin{figure}[h]
+    \includegraphics[width=\linewidth]{{"images/no speaker - accuracy"}.PNG}
+    \caption{No speaker model - accuracy}
+    \label{fig: No speaker model accuracy}
+\end{figure}
+
+\begin{figure}[h]
+    \includegraphics[width=\linewidth]{{"images/no speaker - loss"}.PNG}
+    \caption{No speaker model - loss}
+    \label{fig: No speaker model loss}
+\end{figure}
+
 
 \subsection{Unsupervised speaker recognition}
 
